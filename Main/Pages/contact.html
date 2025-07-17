@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Fandom Marceline</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../images/myWallpaperMarcy.jpg" type="image/jpeg"> </head>
+<body>
+    <header>
+        <address class="ifsp-info">
+            IFSP - Campus Boituva<br>
+            1° Semestre de ADS
+        </address>
+        <h1>Marceline Abadeer: O Reino da Música e da Aventura</h1>
+    </header>
+
+    <div class="page-container">
+        <nav>
+            <ul class="main-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li>
+                    <a href="#">Sobre a Fandom</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">Quem é Marceline</a></li>
+                        <li><a href="music.html">A Música Dela</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="form-section">
+                <h2>Fale Conosco!</h2>
+                <p>Deixe sua mensagem, sugestão ou feedback sobre a fandom de Marceline.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="sugestao">Sugestão para o Site</option>
+                            <option value="feedback">Feedback Geral</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Você é fã de Marceline?</label><br>
+                        <input type="radio" id="simFas" name="fas" value="sim" required>
+                        <label for="simFas">Sim</label>
+                        <input type="radio" id="naoFas" name="fas" value="nao">
+                        <label for="naoFas">Não</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="submit">Enviar Mensagem</button>
+                        <button type="reset">Limpar Formulário</button>
+                    </div>
+                </form>
+
+                <div id="formOutput" class="output-area">
+                    <h3>Dados Enviados:</h3>
+                    <pre id="outputContent"></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fandom Marceline - IFSP Campus Boituva. Todos os direitos reservados à Cartoon Network.</p>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>
