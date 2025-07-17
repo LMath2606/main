@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Exibe os dados no elemento <pre>
-            outputContent.textContent = JSON.stringify(formData, null, 2);
+            // outputContent.textContent = JSON.stringify(formData, null, 2);
+            outputContent.textContent = formData["Nome Completo"] + "\n" + formData["E-mail"] + "\n" + formData["Assunto"] + "\n" + formData["É fã de Marceline?"] + "\n" +formData["Mensagem"];
             formOutput.style.display = 'block'; // Mostra a área de saída
         });
 
